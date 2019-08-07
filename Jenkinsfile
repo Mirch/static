@@ -7,7 +7,7 @@ pipeline {
                     pwd();
 
                     withAWS(region:'us-west-2', credentials:'aws-static') {
-                        s3Upload(file:'./index.html', bucket:'udacity-static', path:'/')
+                        s3Upload(file:'index.html', bucket:'udacity-static', path:'')
                     }
                 }
             }
