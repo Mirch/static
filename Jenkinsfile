@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Upload to AWS') {
             steps {
-                dir('/'){
+                dir('./'){
                     pwd();
 
                     withAWS(region:'us-west-2', credentials:'aws-static') {
